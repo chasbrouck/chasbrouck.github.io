@@ -36,13 +36,13 @@ $button-function-factor: -20% !default;
 // We use these to control button border styles.
 $button-border-width: 0 !default;
 $button-border-style: solid !default;
-$button-bg-color: $mountain !default;
+$button-bg-color: #45B29A !default;
 $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor) !default;
 $button-border-color: $button-bg-hover !default;
 $secondary-button-bg-color: $secondary-color !default;
 $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor) !default;
 $secondary-button-border-color: $secondary-button-bg-hover !default;
-$success-button-bg-color: $success-color !default;
+$success-button-bg-color: #45B29A !default;
 $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor) !default;
 $success-button-border-color: $success-button-bg-hover !default;
 $alert-button-bg-color: $alert-color !default;

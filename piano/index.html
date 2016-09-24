@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conner Hasbrouck</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/font-awesome/font-awesome.min.css">
+    <script src="../src/modernizr/modernizr.js"></script>
+    <script>
+      $('input[type="range"]').rangeslider();
+      $('input[type="range"]').rangeslider('destroy');
+      $('input[type="range"]').rangeslider('update', true);
+    </script>
+  </head>
+  <body>
+    <nav class="top-bar" data-topbar role="navigation">
+      <section class="top-bar-section text-center">
+        <ul class="left">
+          <li class="nav-pad"><a href="../shine/"><b>Previous</b></a></li>
+        </ul>
+      <ul class="middle">
+          <li class="nav-pad"><a href="../"><b>Home</b></a></li>
+      </ul>
+        <ul class="right">
+          <li class="nav-pad"><a href="../mustachio/"><b>Next</b></a></li>
+        </ul>
+
+      </section>
+    </nav>
+    <div class="pad-bot text-center">
+        <div class="">
+          <img src="images/pianoBanner.jpg" width="100%">
+        </div>
+    </div>
+
+    <div class="row init-section-pad-top">
+      <div class="column medium-8 medium-offset-2">
+        <h4>Piano</h4>
+        
+        <p>Piano is web audio experiment that allows you to create and array of instrumental sounds. The base of the product relies on a waveform audio synthesizer written in JavaScript by keithwhor <a href="https://github.com/keithwhor/audiosynth">(https://github.com/keithwhor/audiosynth)</a>. This JavaScript library allows the user to easily produce a waveform note of any musical key.</p>
+
+      </div>
+   </div>
+
+<div class="row pad-top">
+      <div class="column medium-8 medium-offset-2">
+        <h4>My Role</h4>
+        <p>In this project I expanded upon keithwhor's open source library to create a responsive and customizable "web instrument". To start, I created a simplistic user interface which resembles the board of a standard piano. The user can press buttons (on mobile) or use the keyboard (on desktop) to play notes of a specific octave. Additionally, I wrote numerous algorithms which allow the user to heavily customize the sound of the "web instrument". This includes the attack, dampen rate, modulation and sample rate of the instrument. Try the piano out below!</p>
+      </div>
+</div>
+
+
+<div class="row pad-top controls">
+      <div class="column medium-3">
+        <div class="mobile">
+        <h4>Instruments</h4>
+        <ul class="no-bullet">
+          <li>C Key = Custom</li>
+          <li>V Key = Piano</li>
+          <li>B Key = Organ</li>
+          <li>N Key = Acoustic</li>
+          <li>M Key = EDM</li>
+        </ul>
+        <h4>Controls</h4>
+        <ul class="no-bullet">
+          <li class="">1-9 Key = Duration</li>
+          <li>Z Key = Octave Down</li>
+          <li>X Key = Octave Up</li>
+          <li>A key = C</li>
+          <li>W key = C#</li>
+          <li>S key = D</li>
+          <li>E key = D#</li>
+          <li>D key = E</li>
+          <li>F key = F</li>
+          <li>T key = F#</li>
+          <li>G key = G</li>
+          <li>Y key = G#</li>
+          <li>H key = A</li>
+          <li>U key = A#</li>
+          <li>J key = B</li>
+          <li>S key = C</li>
+        </ul>
+        </div>
+      </div>
+      <div class="column medium-6 text-center">
+       <ul class="button-group text-center">
+          <li><a class="button" id="c#" onclick="CSharp()">C#</a></li>
+          <li><a class="button" id="d#" onclick="DSharp()">D#</a></li>
+          <li><a class="button" id="f#" onclick="FSharp()">F#</a></li>
+          <li><a class="button" id="g#" onclick="GSharp()">G#</a></li>
+          <li><a class="button" id="a#" onclick="ASharp()">A#</a></li>
+      </ul>
+        <img src="images/piano.png">
+        <div class=" ">
+          <ul class="button-group">
+              <li><a class="button" id="c" onclick="C()">C</a></li>
+              <li><a class="button" id="d" onclick="D()">D</a></li>
+              <li><a class="button" id="e" onclick="E()">E</a></li>
+              <li><a class="button" id="f" onclick="F()">F</a></li>
+              <li><a class="button" id="g" onclick="G()">G</a></li>
+              <li><a class="button" id="a" onclick="A()">A</a></li>
+              <li><a class="button" id="b" onclick="B()">B</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column medium-3 text-center">
+        <div class="board">
+          <h5>Instrument: <span id="O3"></span></h5>
+          <h5>Octave: <span id="O1"></span></h5>
+          <h5>Duration: <span id="O2"></span></h5>
+        </div>
+        <br>
+        <div class="board">
+        <h5>Attack</h5>
+        <input id="slider1In" type="range" min=".01" max="1" step=".01" value=".02" data-orientation="vertical" oninput="updateSlide()">
+        <h5><output id="slider1Out">.02</output></h5>
+        <h5>Dampen</h5>
+        <input id="slider2In" type="range" min="1" max="6" step=".5" value="2" data-orientation="vertical" oninput="updateSlide2()">
+        <h5><output id="slider2Out">2</output></h5>
+        <h5>Modulate</h5>
+        <input id="slider3In" type="range" min="1" max="5" step="1" value="2" data-orientation="vertical" oninput="updateSlide3()">
+        <h5><output id="slider3Out">2</output></h5>
+        <h5>Sample Rate</h5>
+        <input id="slider4In" type="range" min="5000" max="100000" step="1" value="44100" data-orientation="vertical" oninput="updateSlide4()">
+        <h5><output id="slider4Out">44100</output></h5>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-pad-top pad-bot">
+      <div class="row">
+        <div class="column medium-12 text-center">
+          <h3 >Contact Me</h3>
+          <p>Get in touch, <a href="mailto:connerhasbrouck@gmail.com">connerhasbrouck@gmail.com</a></p>
+          <a href="https://www.linkedin.com/in/conner-hasbrouck-b8905289"><i class="fa fa-linkedin-square fa-2x"></i></a><a href="https://www.facebook.com/conner.hasbrouck"><i class="fa fa-facebook-square fa-2x"></i></a><a href="https://github.com/chasbrouck"><i class="fa fa-github-square fa-2x"></i></a>
+      </div>
+    </section>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79799313-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="js/app.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/audiosynth.js"></script>
+  </body>
+</html>

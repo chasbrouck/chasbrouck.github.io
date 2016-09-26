@@ -219,6 +219,9 @@ $global-radius: 4px;
 .middle{margin-right: 20px;}
 
 @media only screen and (max-width: 40em) { 
+  .mobile-img-pad {
+  padding-bottom: 20px;
+}
   .gallery{padding-bottom:20px;}
 
   #about {
@@ -293,3 +296,4 @@ nav {
   position:  absolute;
 
 }
+

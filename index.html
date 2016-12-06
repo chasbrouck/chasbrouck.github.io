@@ -19,10 +19,10 @@
         </div>
     </div>
 
-    <section class="section-pad-bot part" id="about">
+    <section class="section-pad-bot part pad-top" id="about">
       <div class="row">
         <div class="column medium-12">
-            <h2 class="raleway text-center section-pad-top">About Me</h2>
+            <h2 class="raleway text-center">About Me</h2>
             <p class="text-center">I'm Conner Hasbrouck, a Developer and Designer from Upstate New York.<br><a href="about/"> Want to know more about me?</a> Oh, and here's my <a href="images/resume.pdf" target="_blank">Resume</a>.</p>
         </div>
       </div>
@@ -60,7 +60,7 @@
 
     </section>
 
-      <section class="section-pad-top section-pad-bot part">
+      <section class="section-pad-top section-pad-bot part" id="portfolio">
       <div class="row">
           <div class="column medium-6 gallery">
             <a href="vinyl/"><img src="images/watchrock1.png" onmouseover="this.src='images/watchrock2.png';" onmouseout="this.src='images/watchrock1.png';"></a>
@@ -90,7 +90,7 @@
         </div>   
       </section>
 
-      <section class="section-pad-top pad-bot">
+      <section class="section-pad-top pad-bot part" id="footer">
         <div class="row">
           <div class="column medium-12 text-center">
             <h3 >Contact Me</h3>
@@ -111,15 +111,17 @@
 </script>
       <script src="src/jquery/dist/jquery.min.js"></script>
       <script type="text/javascript" src="js/scrollify.min.js"></script>
-      <script type="text/javascript">
+      <!--<script type="text/javascript">
           if ($(window).width() > 900) { 
             $(function() {
                     $.scrollify({
                         section : ".part",
+                        standardScrollElements: "portfolio",
+                        interstitialSection: "footer",
                     });
              });
           }
-      </script>
+      </script>-->
       <script src="src/foundation/js/foundation.min.js"></script>
       <script src="js/app.js"></script>
       

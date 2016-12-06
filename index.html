@@ -90,7 +90,7 @@
         </div>   
       </section>
 
-      <section class="section-pad-top pad-bot part">
+      <section class="section-pad-top pad-bot">
         <div class="row">
           <div class="column medium-12 text-center">
             <h3 >Contact Me</h3>
@@ -112,12 +112,12 @@
       <script src="src/jquery/dist/jquery.min.js"></script>
       <script type="text/javascript" src="js/scrollify.min.js"></script>
       <script type="text/javascript">
-          if (screen.width >= 600) {
+          if ($(window).width() > 900) { 
             $(function() {
                     $.scrollify({
                         section : ".part",
                     });
-                });
+             });
           }
       </script>
       <script src="src/foundation/js/foundation.min.js"></script>

@@ -40,91 +40,20 @@
 	<div class="row init-section-pad-top">
 		<div class="column medium-8 medium-offset-2">
 			<h4>Piano</h4>
-
-			<p>Piano is web audio experiment that allows you to create an array of sounds. The base of the product relies on a waveform audio synthesizer written in JavaScript by keithwhor <a href="https://github.com/keithwhor/audiosynth">(https://github.com/keithwhor/audiosynth)</a>. This JavaScript library allows the user to easily produce a waveform note of any musical key.</p>
-
-		</div>
-	</div>
-
-	<div class="row pad-top">
-		<div class="column medium-8 medium-offset-2">
+		
+			<P>
+				Piano is web audio experiment that allows you to create custom instruments. This project expands upon the waveform audio synthesizer created by github user <a href="https://github.com/keithwhor/audiosynth"  target="_blank">keithwhor.</a>
+			</P>
+			
 			<h4>My Role</h4>
-			<p>In this project I expanded upon keithwhor's open source library to create a responsive and customizable "web instrument". To start, I created a simplistic user interface which resembles the board of a standard piano. The user can press buttons (on mobile) or use the keyboard (on desktop) to play notes of a specific octave. Additionally, I wrote numerous algorithms which allow the user to heavily customize the sound of the "web instrument". This includes the attack, dampen rate, modulation and sample rate of the instrument. Try the piano out below!</p>
+			<p>I created a simplistic user interface which resembles the board of a standard piano. The user can press desktop keys or utilize a touch screen to play notes. Additionally, I wrote numerous algorithms which allow the user to heavily customize the sound of the "web instrument". This includes the attack, dampen rate, modulation and sample rate of the instrument.</p>
+			
+			<p><b>Live Site:</b> <a href="http://chasbrouck.io/pianoplay/" target="_blank">http://chasbrouck.io/pianoplay/</a></p>
+
+			<p><b>Git Hub:</b> <a href="https://github.com/chasbrouck/pianoplay/" target="_blank">https://github.com/chasbrouck/pianoplay/</a></p>
 		</div>
 	</div>
-
-
-	<div class="row pad-top controls">
-		<div class="column medium-3">
-			<div class="mobile">
-
-				<h4>Controls</h4>
-				<ul class="no-bullet">
-					<li class="">1-9 Key = Duration</li>
-					<li>Z Key = Octave Down</li>
-					<li>X Key = Octave Up</li>
-					<li>A key = C</li>
-					<li>W key = C#</li>
-					<li>S key = D</li>
-					<li>E key = D#</li>
-					<li>D key = E</li>
-					<li>F key = F</li>
-					<li>T key = F#</li>
-					<li>G key = G</li>
-					<li>Y key = G#</li>
-					<li>H key = A</li>
-					<li>U key = A#</li>
-					<li>J key = B</li>
-					<li>S key = C</li>
-				</ul>
-			</div>
-		</div>
-		<div class="column medium-6 text-center">
-			<ul class="button-group text-center">
-				<li><a class="button" id="c#" onclick="CSharp()">C#</a></li>
-				<li><a class="button" id="d#" onclick="DSharp()">D#</a></li>
-				<li><a class="button" id="f#" onclick="FSharp()">F#</a></li>
-				<li><a class="button" id="g#" onclick="GSharp()">G#</a></li>
-				<li><a class="button" id="a#" onclick="ASharp()">A#</a></li>
-			</ul>
-			<img src="images/PianoBoard.jpg">
-			<div class=" ">
-				<ul class="button-group">
-					<li><a class="button" id="c" onclick="C()">C</a></li>
-					<li><a class="button" id="d" onclick="D()">D</a></li>
-					<li><a class="button" id="e" onclick="E()">E</a></li>
-					<li><a class="button" id="f" onclick="F()">F</a></li>
-					<li><a class="button" id="g" onclick="G()">G</a></li>
-					<li><a class="button" id="a" onclick="A()">A</a></li>
-					<li><a class="button" id="b" onclick="B()">B</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="column medium-3 text-center pad-mobile-alt">
-			<h4>Alteration</h4>
-			<div class="board">
-				<h5>Instrument: <span id="O3"></span></h5>
-				<h5>Octave: <span id="O1"></span></h5>
-				<h5>Duration: <span id="O2"></span></h5>
-			</div>
-			<br>
-			<div class="board">
-				<h5>Attack</h5>
-				<input id="slider1In" type="range" min=".01" max="1" step=".01" value=".02" data-orientation="vertical" oninput="updateSlide()">
-				<h5><output id="slider1Out">.02</output></h5>
-				<h5>Dampen</h5>
-				<input id="slider2In" type="range" min="1" max="6" step=".5" value="2" data-orientation="vertical" oninput="updateSlide2()">
-				<h5><output id="slider2Out">2</output></h5>
-				<h5>Modulate</h5>
-				<input id="slider3In" type="range" min="1" max="5" step="1" value="2" data-orientation="vertical" oninput="updateSlide3()">
-				<h5><output id="slider3Out">2</output></h5>
-				<h5>Sample Rate</h5>
-				<input id="slider4In" type="range" min="5000" max="100000" step="1" value="44100" data-orientation="vertical" oninput="updateSlide4()">
-				<h5><output id="slider4Out">44100</output></h5>
-			</div>
-		</div>
-	</div>
-
+	
 	<section class="section-pad-top pad-bot">
 		<div class="row">
 			<div class="column medium-12 text-center">

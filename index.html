@@ -1,108 +1,170 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html>
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Conner Hasbrouck</title>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/app.css" />
-	<link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
-	<script src="src/modernizr/modernizr.js"></script>
+
+	<!-- libs -->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- my bomb ass css -->
+	<link rel="stylesheet" href="css/app.css">
+
+	<!--fullPage-->
+	<link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
+	<script src="fullPage/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="fullPage/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#ffffff', '#ffffff', '#ffffff'],
+				anchors: ['home', 'about', 'work', 'contact'],
+				menu: '#menu',
+				scrollOverflow: true,
+				resetSliders: true,
+			});
+		});
+	</script>
+
 </head>
 
 <body>
+	<ul id="menu">
+		<!--<li data-menuanchor="home" class=""><a href="#home">home</a></li>-->
+		<li data-menuanchor="about" class=""><a href="#about">about</a></li>
+		<li data-menuanchor="work"><a href="#work">work</a></li>
+		<li data-menuanchor="contact"><a href="#contact">contact</a></li>
+	</ul>
 
-	<div class="cover part">
-		<div class="row text-center">
-			<div class="column">
-				<h1 class="banner-text pad-top">Conner Hasbrouck</h1>
-				<h2 class="banner-text-small sans mountain">developer - designer</h2>
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<div class="pure-g">
+				<div class="pure-u-3-24"></div>
+				<div class="pure-u-18-24">
+					<h2 class="center">I'm <a href="#about"><span class="blueU">Conner Hasbrouck</span></a>, a <a href="#work"><span class="yellowU">developer and digital designer</span></a>.</h2>
+					<h2 class="center"><a href="#about"><span class="greenU">Want to know more about me?</span></a> Oh, and here's my <a href="images/resume.pdf" target="_blank"><span class="redU">resume</span></a>.</h2>
+				</div>
+			</div>
+		</div>
+		<div class="section " id="section1">
+			<div class="pure-g">
+				<div class="pure-u-3-24"></div>
+				<div class="pure-u-18-24">
+					<h2><span class="blueU2">What do you do?</span></h2>
+					<p>I specialize in front end dev and website design. Bad UX keeps me up at night.</p>
+
+					<h2><span class="yellowU2">Whatcha been up to?</span></h2>
+					<p>Making websites, teaching myself Angular and building an iPhone app.</p>
+
+					<h2><span class="greenU2">Freetime? Fun facts?</span></h2>
+					<div id="content-1">
+						<p>I'm an avid rock climber, skier and hiker. I also play in a folk band.</p>
+					</div>
+					<div id="content-2">
+						<p>I'm a radio personality at WITR 89.7. My DJ name is "Robert Zimmerman".</p>
+					</div>
+					<div id="content-3">
+						<p>My favorite book is "Zen and the Art of Motorcycle Maintenance".</p>
+					</div>
+					<div id="content-4">
+						<p>I dont like riding motocycles.</p>
+					</div>
+					<div id="content-5">
+						<p>I play guitar, mandolin, ukulele and a bit of banjo. I also sing.</p>
+					</div>
+					<div id="content-6">
+						<p>I have coffee addiction. Seriously, I drink a lot of coffee.</p>
+					</div>
+					<div id="content-7">
+						<p>I love to cook and prefer spicy food. Bring the heat.</p>
+					</div>
+					<div id="content-8">
+						<p>I firmly beleive that Bob Dylan is the greatest songwriter ever to live.</p>
+					</div>
+					<div id="content-8">
+						<p>I firmly beleive that Bob Dylan is the greatest songwriter ever to live.</p>
+					</div>
+
+					<h3><a href="#about" id="funFact"><span class="redU">more fun facts?</span></a></h3>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="pure-g pad-nav">
+				<div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
+					<a href="@/"><img src="images/@.png" class="workImg"></a>
+				</div>
+				<div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
+					<a href="vinyl/"><img src="images/watchrock1.png" class="workImg"></a>
+				</div>
+				<div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
+					<a href="piano/"><img src="images/Piano.png" class="workImg"></a>
+				</div>
+				<div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
+					<a href="tw/"><img src="images/troyWeb.png" class="workImg"></a>
+				</div>
+			</div>
+			<div class="pure-g">
+				<div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
+					<a href="cafe/"><img src="images/cafe.png" class="workImg"></a>
+				</div>
+				<div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
+					<a href="shine/"><img src="images/title.png" class="workImg"></a>
+				</div>
+				<div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
+					<a href="graphics/"><img src="images/graphics.png" class="workImg"></a>
+				</div>
+				<div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
+					<a href="mustachio/"><img src="images/mustachio.png" class="workImg"></a>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="intro">
+				<div class="pure-g">
+					<div class="pure-u-3-24"></div>
+					<div class="pure-u-18-24">
+						<h2 class=""><span class="blueU2">email:</span> <a href="mailto:connerhasbrouck@gmail.com">connerhasbrouck@gmail.com</a></h2>
+						<h2 class=""><span class="yellowU2">telepathy:</span> ~~~~~~~~~~~~~~~~~~</h2>
+						<h2 class=""><span class="greenU2">magic voice box:</span> 518.728.0671</h2>
+
+						<div class="">
+							<h2><span class="redU2">social:</span>
+						<a href="https://www.facebook.com/conner.hasbrouck"><i class="fa fa-facebook-square fa-lg"></i></a>
+						<a href="https://github.com/chasbrouck"><i class="fa fa-github-square fa-lg"></i></a>
+						<a href="https://www.linkedin.com/in/conner-hasbrouck-b8905289"><i class="fa fa-linkedin-square fa-lg"></i></a>
+					</h2>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<section class="section-pad-bot part" id="about">
-		<div class="row">
-			<div class="column medium-12">
-				<h2 class="raleway text-center section-pad-top">About Me</h2>
-				<p class="text-center">I'm Conner Hasbrouck, a Developer and Digital Designer.
-					<br><a href="about/"> Want to know more about me?</a> Oh, and here's my <a href="images/resume.pdf" target="_blank">Resume</a>.</p>
-			</div>
-		</div>
-
-	</section>
-
-	<section class="section-pad-top section-pad-bot part" id="portfolio">
-		<div class="row">
-			<div class="column medium-6 gallery ">
-				<a href="@/"><img src="images/@.png" onmouseover="this.src='images/@2.png';" onmouseout="this.src='images/@.png';"></a>
-			</div>
-			<div class="column medium-6">
-				<a href="vinyl/"><img src="images/watchrock1.png" onmouseover="this.src='images/watchrock2.png';" onmouseout="this.src='images/watchrock1.png';"></a>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="column medium-6 gallery">
-				<a href="cafe/"><img src="images/cafe.png" onmouseover="this.src='images/cafe2.png';" onmouseout="this.src='images/cafe.png';"></a>
-
-			</div>
-			<div class="column medium-6 ">
-				<a href="tw/"><img src="images/troyWeb.png" onmouseover="this.src='images/troy2.png';" onmouseout="this.src='images/troyWeb.png';"></a>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="column medium-6 gallery">
-				<a href="piano/"><img src="images/Piano.png" onmouseover="this.src='images/Piano2.png';" onmouseout="this.src='images/Piano.png';"></a>
-			</div>
-			<div class="column medium-6 ">
-				<a href="shine/"><img src="images/title.png" onmouseover="this.src='images/title2.png';" onmouseout="this.src='images/title.png';"></a>
-			</div>
-
-		</div>
-		<br>
-		<div class="row">
-			<div class="column medium-6 gallery">
-				<a href="graphics/"><img src="images/air.png" onmouseover="this.src='images/air2.png';" onmouseout="this.src='images/air.png';"></a>
-			</div>
-			<div class="column medium-6 ">
-				<a href="mustachio/"><img src="images/mustachio.png" onmouseover="this.src='images/mustach2.png';" onmouseout="this.src='images/mustachio.png';"></a>
-			</div>
-
-		</div>
-	</section>
-
-	<section class="section-pad-top pad-bot part" id="footer">
-		<div class="row">
-			<div class="column medium-12 text-center">
-				<h3 class="">Contact Me</h3>
-				<p>Get in touch, <a href="mailto:connerhasbrouck@gmail.com">connerhasbrouck@gmail.com</a></p>
-				<a href="https://www.linkedin.com/in/conner-hasbrouck-b8905289"><i class="fa fa-linkedin-square fa-2x"></i></a><a href="https://www.facebook.com/conner.hasbrouck"><i class="fa fa-facebook-square fa-2x"></i></a><a href="https://github.com/chasbrouck"><i class="fa fa-github-square fa-2x"></i></a>
-			</div>
-		</div>
-	</section>
-
 	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		$(document).ready(function () {
+			var divs = $('div[id^="content-"]').hide(),
+				i = 0;
 
-		ga('create', 'UA-79799313-1', 'auto');
-		ga('send', 'pageview');
+			function cycle() {
+				divs.fadeOut(400).delay(400).eq(i).fadeIn(400);
+				i = ++i % divs.length;
+			};
+			cycle()
+			$('#funFact').click(function () {
+				cycle()
+			})
+		});
 	</script>
-	<script src="src/jquery/dist/jquery.min.js"></script>
-	<script src="src/foundation/js/foundation.min.js"></script>
-	<script src="js/app.js"></script>
 </body>
 
 </html>

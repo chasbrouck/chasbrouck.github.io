@@ -1,158 +1,141 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html>
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Conner Hasbrouck</title>
-	<link rel="stylesheet" href="../css/app.css" />
-	<link rel="stylesheet" href="../css/font-awesome/font-awesome.min.css">
-	<script src="../src/modernizr/modernizr.js"></script>
+
+	<!-- libs -->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+	<!-- my bomb ass css -->
+	<link rel="stylesheet" href="../css/app.css">
+
+	<!--fullPage-->
+	<link rel="stylesheet" type="text/css" href="../fullPage/jquery.fullPage.css" />
+	<script src="../fullPage/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="../fullPage/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="../fullPage/jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#EE2A47', '#ffffff', '#ffffff'],
+				anchors: ['work', 'nav', 'team', 'menu', 'foot'],
+				menu: '#menu',
+				scrollOverflow: true,
+			});
+		});
+	</script>
+
 </head>
 
-<body>
-	<nav class="top-bar" data-topbar role="navigation">
-		<section class="top-bar-section text-center">
-			<ul class="left">
-				<li class="nav-pad"><a href="../shine/"><b>Previous</b></a></li>
-			</ul>
-			<ul class="middle">
-				<li class="nav-pad"><a href="../"><b>Home</b></a></li>
-			</ul>
-			<ul class="right">
-				<li class="nav-pad"><a href="../vinyl/"><b>Next</b></a></li>
-			</ul>
+<body class="work">
+	<ul id="menu">
+		<li data-menuanchor="about"><a href="../mustachio/" class="whiteMenu">previous</a></li>
+		<li data-menuanchor="home"><a href="../#work" class="whiteMenu">home</a></li>
+		<li data-menuanchor="contact"><a href="../vinyl/" class="whiteMenu">next</a></li>
+	</ul>
 
-		</section>
-	</nav>
-	<div class="pad-bot text-center">
-		<div class="">
-			<img src="images/@Banner.jpg" width="100%">
-		</div>
-	</div>
+	<div id="fullpage">
+		<div class="section" id="section0">
+			<div class="pure-g pad-nav">
+				<div class="pure-u-md-3-24 pure-u-0-1"></div>
+				<div class="pure-u-md-8-24 pure-u-1-1 center">
+					<!--<img src="images/@Intro.png" class="imageResponsive introImg">-->
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+						<g>
+							<path class="path4" fill="none" stroke="#F1F2F2" stroke-width="7" stroke-miterlimit="10" d="M301.995,228.134
+		c42.931,0,73.215,26.241,73.215,63.361c0,25.601-14.643,43.36-35.609,43.36c-9.65,0-17.305-4.32-20.633-11.199
+		c-6.323,7.199-14.976,11.199-25.126,11.199c-18.803,0-32.281-14.719-32.281-34.88c0-20.161,13.479-34.881,32.281-34.881
+		c8.819,0,16.141,3.36,20.966,9.12l2.163-7.52h17.306v44.641c0,5.279,2.995,8.801,7.82,8.801c8.985,0,15.143-10.881,15.143-27.042
+		c0-29.44-22.797-49.761-55.244-49.761c-34.61,0-59.237,23.361-59.237,56.642c0,33.28,24.627,56.642,59.237,56.642
+		c12.313,0,25.958-4,40.269-11.682l8.153,13.441c-17.306,8.959-33.446,13.439-48.422,13.439c-45.26,0-77.042-29.6-77.042-71.841
+		C224.953,257.895,256.901,228.134,301.995,228.134z M299,319.016c8.819,0,14.477-6.561,14.477-15.04v-8
+		c0-8.64-5.657-15.04-14.477-15.04c-9.318,0-16.141,7.84-16.141,19.041C282.859,311.176,289.682,319.016,299,319.016z" />
+						</g>
+					</svg>
+				</div>
+				<div class="pure-u-md-9-24 pure-u-1-1 introPad">
+					<h2 class="whiteT">Thought At Work - Website 2016</h2>
+					<p class="whiteT">Directly quoting the Thought At Work website - "Thought At Work is a three-day, student-run, student-focused design conference that takes place every October at Rochester Institute of Technology."</p>
+					<h2 class="whiteT">My Role</h2>
+					<p class="whiteT">For T@W 2016, I worked with a team of developers to build the conference website. It was my job to develop many of the custom interfaces that were wireframed by our design team. It was also my responsibility to ensure the seemless transition of desktop elements to smaller platforms.</p>
 
-	<div class="row init-section-pad-top">
-		<div class="column medium-8 medium-offset-2">
-			<h4>Though At Work - Website 2016</h4>
-			<p>Directly quoting the Thought At Work website - "Thought At Work is a three-day, student-run, student-focused design conference that takes place every October at Rochester Institute of Technology."</p>
-			<p>For the 2016 conference, I worked along side Jake Frank, Cole Johnson and Amy Pham to develop the conference <a href="http://thoughtatwork.cias.rit.edu/">website</a>.</p>
-
-			<p>Git Hub: <a href="https://github.com/ThoughtAtWork/Website">https://github.com/ThoughtAtWork/Website</a></p>
-			<p>Live Site: <a href="http://thoughtatwork.cias.rit.edu/">http://thoughtatwork.cias.rit.edu/</a></p>
-		</div>
-	</div>
-
-	<div class="row pad-top">
-		<div class="column medium-8 medium-offset-2">
-			<h4>My Role</h4>
-			<p>The 2016 Thought at Work website utilizes a bootstrap framework to assist in responsive development. However, the website design contained many elements that required specific attention on tablet/mobile views. It was my job to develop these custom interfaces/designs for seamless responsive viewing. Additionally, I assisted in the development of various desktop elements. Below are a few examples.</p>
-		</div>
-	</div>
-
-	<div class="row pad-top">
-		<div class="column medium-8 medium-offset-2">
-			<h4>Evolution of Navigation</h4>
-			<br>
-			<p>Role: Styling/Developemnt of Desktop & Responsive navigation.</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="column medium-8 medium-offset-2 img-pad">
-			<div class="column medium-12"><img src="images/nav1.png"></div>
-		</div>
-	</div>
-	<div class="row pad-bot">
-		<div class="column medium-8 medium-offset-2">
-			<div class="column medium-6 mobile-img-pad"><img src="images/nav2.png"></div>
-			<div class="column medium-6"><img src="images/nav3.png"></div>
-		</div>
-	</div>
-
-	<div class="row pad-top">
-		<div class="column medium-8 medium-offset-2">
-			<h4>Evolution of Footer</h4>
-			<br>
-			<p>Role: Styling/Developemnt of Desktop & Responsive Footer.</p>
-		</div>
-	</div>
-
-	<div class="row pad-bot">
-		<div class="column medium-8 medium-offset-2 text-center">
-			<div class="column medium-12"><img src="images/foot1.png"></div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="column medium-6 medium-offset-3 img-pad">
-			<div class="column medium-12"><img src="images/foot2.png"></div>
-		</div>
-	</div>
-	<div class="row pad-top">
-		<div class="column medium-8 medium-offset-2">
-			<h4>Evolution of Team Page</h4>
-			<br>
-			<p>Role: Styling/Developemnt of Interactive team section. Developed a Javascript parser to autonimously generate images/information based on a text file.</p>
-		</div>
-	</div>
-
-	<div class="row pad-bot">
-		<div class="column medium-8 medium-offset-2 text-center">
-			<div class="column medium-12"><img src="images/team1.png"></div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="column medium-6 medium-offset-3 img-pad">
-			<div class="column medium-12"><img src="images/team2.png"></div>
-		</div>
-	</div>
-	<div class="row pad-top">
-		<div class="column medium-8 medium-offset-2">
-			<h4>Resturant & Location</h4>
-			<br>
-			<p>Role: Styling/Developemnt of a Responsive menu that showcased all resturants in the area. Developed Javascript logic to display expanded resturant informaton.</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="column medium-8 medium-offset-2 img-pad">
-			<div class="column medium-12"><img src="images/food1.png"></div>
-		</div>
-	</div>
-	<div class="row pad-bot">
-		<div class="column medium-8 medium-offset-2 img-pad">
-			<div class="column medium-6 text-center">
-				<div class="column medium-12"><img src="images/food2.png"></div>
+					<p class="whiteT"><b>Live Site:</b> <a href="http://thoughtatwork.cias.rit.edu/" class="whiteU" target="_blank">http://thoughtatwork.cias.rit.edu/</a></p>
+					<p class="whiteT"><b>Git Hub:</b> <a target="_blank" href="https://github.com/ThoughtAtWork/Website" class="whiteU">https://github.com/ThoughtAtWork/Website</a></p>
+					<div class="center">
+						<i class="fa fa-arrow-down whiteT fa-2x" aria-hidden="true"></i>
+					</div>
+				</div>
 			</div>
-			<div class="column medium-6 text-center">
-				<div class="column medium-12"><img src="images/food3.png"></div>
+		</div>
+		<div class="section" id="section1">
+			<div class="pure-g pad-nav">
+				<div class="pure-u-md-3-24 pure-u-0-1"></div>
+				<div class="pure-u-md-8-24 pure-u-1-1">
+					<h2>Evolution of Navigation</h2>
+					<p>The website's main navigation scheme. The format of this element evolved based on the viewing medium and screen size.</p>
+					<p><a href="http://thoughtatwork.cias.rit.edu/index.php" target="_blank" class="redU3">Want to see?</a></p>
+				</div>
+				<div class="pure-u-md-9-24 pure-u-1-1 introPad">
+					<img src="images/nav1.png" class="imageFull">
+					<img src="images/nav2.png" class="imageHalf">
+					<img src="images/nav3.png" class="imageHalf">
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="pure-g pad-nav">
+				<div class="pure-u-3-24 pure-u-0-1"></div>
+				<div class="pure-u-md-8-24 pure-u-1-1">
+					<h2>Team Page</h2>
+					<p>A self-populating team page. Profiles were generated with a javascript based txt parser and integration with <a href="https://www.imgix.com/" class="redU3">Imgix</a> for decreased load time.</p>
+					<p><a href="http://thoughtatwork.cias.rit.edu/about.php" target="_blank" class="redU3">Want to see?</a></p>
+				</div>
+				<div class="pure-u-md-9-24 pure-u-1-1 introPad center">
+					<img src="images/team1.png" class="imageFull">
+					<img src="images/team2.png" class="imageHalf">
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="pure-g pad-nav">
+				<div class="pure-u-3-24 pure-u-0-1"></div>
+				<div class="pure-u-md-8-24 pure-u-1-1">
+					<h2>Resturant & Location</h2>
+					<p>A responsive menu that showcases resturants in proximity to the conference. Developed with javascript.</p>
+					<p><a href="http://thoughtatwork.cias.rit.edu/getready.php" target="_blank" class="redU3">Want to see?</a></p>
+				</div>
+				<div class="pure-u-md-9-24 pure-u-1-1 introPad">
+					<img src="images/menu1.png" class="imageFull">
+					<img src="images/menu2.png" class="imageHalf">
+					<img src="images/menu3.png" class="imageHalf">
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<div class="pure-g pad-nav">
+				<div class="pure-u-3-24 pure-u-0-1"></div>
+				<div class="pure-u-md-8-24 pure-u-1-1">
+					<h2>Evolution of Footer</h2>
+					<p>The website's footer. The format of this element evolved based on the viewing medium and screen size.</p>
+					<p><a href="http://thoughtatwork.cias.rit.edu/index.php" target="_blank" class="redU3">Want to see?</a></p>
+				</div>
+				<div class="pure-u-md-9-24 pure-u-1-1 introPad">
+					<img src="images/foot1.png" class="imageResponsive">
+					<img src="images/foot2.png" class="imageHalf">
+					<img src="images/foot3.png" class="imageThird">
+				</div>
 			</div>
 		</div>
 	</div>
-
-
-	<section class="section-pad-top pad-bot">
-		<div class="row">
-			<div class="column medium-12 text-center">
-				<h3>Contact Me</h3>
-				<p>Get in touch, <a href="mailto:connerhasbrouck@gmail.com">connerhasbrouck@gmail.com</a></p>
-				<a href="https://www.linkedin.com/in/conner-hasbrouck-b8905289"><i class="fa fa-linkedin-square fa-2x"></i></a><a href="https://www.facebook.com/conner.hasbrouck"><i class="fa fa-facebook-square fa-2x"></i></a><a href="https://github.com/chasbrouck"><i class="fa fa-github-square fa-2x"></i></a>
-			</div>
-		</div>
-	</section>
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-79799313-1', 'auto');
-		ga('send', 'pageview');
-	</script>
 </body>
 
 </html>

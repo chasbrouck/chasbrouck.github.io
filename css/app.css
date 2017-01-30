@@ -1,7 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+/* global bg/u color */
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
-/* global bg/u color */
+@font-face {
+	font-family: CircularStd-Book;
+	src: url(../fonts/CircularStd-Book.otf);
+}
 
 .blackB {
 	background-color: #474751;
@@ -117,20 +120,7 @@
 	color: #ffffff !important;
 }
 
-
-/* fonts */
-
-@font-face {
-	font-family: CircularStd-Book;
-	src: url(../fonts/CircularStd-Book.otf);
-}
-
-.font-bump {
-	font-size: 1.2em;
-}
-
-
-/*global colors & font*/
+/*all*/
 
 a {
 	color: #333333;

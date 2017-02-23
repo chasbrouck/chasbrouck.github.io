@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/icon.png">
+	<title>Conner Hasbrouck</title>
+
+	<!-- libs -->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+	<!-- my bomb ass css -->
+	<link rel="stylesheet" href="../css/app.css">
+
+	<!--fullPage-->
+	<link rel="stylesheet" type="text/css" href="../fullPage/jquery.fullPage.css" />
+	<script src="../fullPage/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="../fullPage/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="../fullPage/jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#000', '#ffffff', '#ffffff'],
+				anchors: ['work', 'life'],
+				menu: '#menu',
+				scrollOverflow: true,
+			});
+		});
+	</script>
+
+</head>
+
+<body class="work">
+	<ul id="menu">
+		<li data-menuanchor="about"><a href="../mustachio/" class="whiteMenu">previous</a></li>
+		<li data-menuanchor="home"><a href="../#work" class="whiteMenu">home</a></li>
+		<li data-menuanchor="contact"><a href="../@/" class="whiteMenu">next</a></li>
+	</ul>
+
+	<div id="fullpage">
+		<div class="section" id="section0">
+			<div class="pure-g pad-nav">
+				<div class="pure-u-md-3-24 pure-u-0-1"></div>
+				<div class="pure-u-md-8-24 pure-u-1-1 center">
+					<img class="imageResponsive pad-top" src="../images/ambio.png">
+				</div>
+				<div class="pure-u-md-9-24 pure-u-1-1 introPad">
+					<h2 class="whiteT">Ambio - Capstone Spring 2017</h2>
+					<p class="whiteT">Ambio translates the subtle details of personal relationships into digital communication using the biometric tracking capabilities of wearables.</p>
+
+					<p class="whiteT">By creating ambient communication, Ambio will narrow the gap in personal relationships and encourage active connections.</p>
+					<h2 class="whiteT">My Role</h2>
+					<p class="whiteT">The Ambio team consists of five designers and three developers. I'm leading the charge as manager of the development team.</p>
+					<p class="whiteT"><a href="#life" class="whiteU">Learn about life with Ambio</a></p>
+					<p class="whiteT"><b>Blog:</b> <a href="http://ambio.tech/" class="whiteU" target="_blank">http://ambio.tech//</a></p>
+					<div class="center">
+						<i class="fa fa-arrow-down whiteT fa-2x" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="pure-g pad-nav">
+				<div class="pure-u-md-3-24 pure-u-0-1"></div>
+				<div class="pure-u-md-18-24 pure-u-1-1">
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/d1ffweMIjYg" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

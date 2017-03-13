@@ -372,6 +372,7 @@ p {
 	animation: dash4 2.8s linear forwards;
 }
 
+
 @keyframes dash {
 	from {
 		stroke-dashoffset: 1050;
@@ -466,6 +467,9 @@ iframe.imageResponsive {
 	}
 	.cmsGroup {
 		margin-top: 75px;
+	}
+	.pad-desktop {
+	margin-top: 50px;
 	}
 }
 

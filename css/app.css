@@ -442,7 +442,7 @@ iframe.imageResponsive {
 
 /*desktop*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
 	.introPad {
 		padding-left: 5%;
 	}
@@ -485,7 +485,7 @@ iframe.imageResponsive {
 
 /*mobile*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 	#menu {
 		width: 100%;
 		text-align: center;
@@ -521,12 +521,6 @@ iframe.imageResponsive {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
-	p {
-		font-size: 4vw;
-	}
-	h2 {
-		font-size: 5vw;
-	}
 	.fa-arrow-down {
 		padding-top: 20px;
 	}
@@ -538,6 +532,22 @@ iframe.imageResponsive {
 	}
 	.work .pure-g {
 		padding-bottom: 100px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	p {
+		font-size: 3vw;
+	}
+	h2 {
+		font-size: 4vw;
+	}
+}
+@media only screen and (max-width: 500px) {
+	p {
+		font-size: 4vw;
+	}
+	h2 {
+		font-size: 5vw;
 	}
 }
 

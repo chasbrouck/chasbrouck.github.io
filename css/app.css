@@ -201,6 +201,9 @@ p {
 .imageResponsive {
 	width: 100%;
 }
+.imageQuarter {
+	width: 24%;
+}
 
 .mountain {
 	color: var(--mountain);

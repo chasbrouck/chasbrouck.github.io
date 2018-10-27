@@ -11,99 +11,115 @@
 
   <!-- libs -->
   <link rel="stylesheet"
-        href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
-  <link rel="stylesheet"
-        href="https://unpkg.com/purecss@0.6.1/build/pure-min.css">
-  <link rel="stylesheet"
-        href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <link rel="stylesheet"
         href="../css/font-awesome.min.css">
 
   <!-- my bomb ass css -->
   <link rel="stylesheet"
         href="../css/app.css">
-
-  <!--fullPage-->
   <link rel="stylesheet"
-        type="text/css"
-        href="../fullPage/jquery.fullPage.css" />
-  <script src="../fullPage/jquery.easings.min.js"></script>
-  <script type="text/javascript"
-          src="../fullPage/scrolloverflow.min.js"></script>
-  <script type="text/javascript"
-          src="../fullPage/jquery.fullPage.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        sectionsColor: ['#8F13FD', '#ffffff', '#ffffff'],
-        anchors: ['work', 'life'],
-        menu: '#menu',
-        scrollOverflow: true,
-      });
-    });
-  </script>
-
+        href="css/ambio.css">
 </head>
 
-<body class="work">
-  <ul id="menu">
-    <li data-menuanchor="about"><a href="../piano/"
-         class="whiteMenu">previous</a></li>
-    <li data-menuanchor="home"><a href="../#work"
-         class="whiteMenu">home</a></li>
-    <li data-menuanchor="contact"><a href="../@/"
-         class="whiteMenu">next</a></li>
-  </ul>
-
-  <div id="fullpage">
-    <div class="section"
-         id="section0">
-      <div class="pure-g pad-nav">
-        <div class="pure-u-md-3-24 pure-u-0-1"></div>
-        <div class="pure-u-md-8-24 pure-u-1-1 center">
-          <img class="imageResponsive pad-desktop"
-               src="images/logo-white.png">
-        </div>
-        <div class="pure-u-md-9-24 pure-u-1-1 introPad">
-          <h2 class="whiteT pad-desktop">Ambio - Capstone Spring 2017</h2>
-          <p class="whiteT">Ambio is a modern take on the classic mood ring. Using the biometric tracking capabilities of wearable technology, Ambio interprets your emotions and shares them with the people closest to you.</p>
-
-          <h2 class="whiteT">My Role</h2>
-          <p class="whiteT">The Ambio team consists of five designers and three developers. I'm leading the charge as manager of the development team.</p>
-          <p class="whiteT"><a href="#life"
-               class="whiteU">Learn more about Ambio</a></p>
-          <p class="whiteT"><b>GitHub:</b> <a href="https://github.com/ambioapp/ambioSwift"
-               class="whiteU"
-               target="_blank">https://github.com/ambioapp/ambioSwift</a></p>
-          <div class="center">
-            <i class="fa fa-arrow-down whiteT fa-2x"
-               aria-hidden="true"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section"
-         id="section1">
-      <div class="pure-g pad-nav">
-        <div class="pure-u-md-4-24 pure-u-0-1"></div>
-        <div class="pure-u-md-16-24 pure-u-1-1">
-          <div class="video-container">
-            <iframe src="https://player.vimeo.com/video/216015008"
-                    width="640"
-                    height="360"
-                    frameborder="0"
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    allowfullscreen></iframe>
-            <p><a href="https://vimeo.com/216015008">#whatisambio</a> from <a href="https://vimeo.com/ambio">ambio</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
+<body class="ambioRoot">
+  <div class="ambioHeader">
+    <img src="images/logo-white.png"
+         class="ambioHeaderImage">
   </div>
+  <div class="sectionMargin">
+    <div class="ambioSection">
+      <h2 class="ambioSectionTitle">What Is Ambio?</h2>
+      <h3>Ambio is a contemporary take on the classic mood ring. Using the biometric tracking capabilities of wearable technology, Ambio interprets your emotions and shares them with the people closest to you. Built for iOS and Apple Watch.</h3>
+      <h3>Check out our teams <a href="images/ambio-process.compressed.pdf"
+           target="_blank">process docs</a> and learn more below.</h3>
+      </h3>
+      <div class="ambioVideo">
+        <div class='embed-container'><iframe src="https://player.vimeo.com/video/216015008"
+                  frameborder='0'
+                  webkitAllowFullScreen
+                  mozallowfullscreen
+                  allowFullScreen></iframe></div>
+      </div>
+    </div>
+
+    <div class="ambioSection">
+      <h2 class="ambioSectionTitle">Partner Connection</h2>
+      <h3>Ambio was born out of a dissatisfaction with current digital communication methods. Although powerful, mediums like Facetime and social media struggle to recreate the passive intimacies of in-person communication.</h3>
+      <h3>Ambio narrow this gap by providing further context into your interactions. Based on biometric data such as vocal tone and heart rate, Ambio generates a real-time data visualization of your emotional state and shares it with those closest to you.</h3>
+      <h3>iOS and Watch OS video demos below.</h3>
+      <div class="flex">
+        <div class="ambioVideoHalf">
+          <div class='embed-container'><iframe src="https://player.vimeo.com/video/215970806"
+                    frameborder='0'
+                    webkitAllowFullScreen
+                    mozallowfullscreen
+                    allowFullScreen></iframe></div>
+        </div>
+        <div class="ambioVideoHalf">
+          <div class='embed-container'><iframe src="https://player.vimeo.com/video/215976177"
+                    frameborder='0'
+                    webkitAllowFullScreen
+                    mozallowfullscreen
+                    allowFullScreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ambioSection">
+      <h2 class="ambioSectionTitle">Mood Visualization</h2>
+      <h3>Ambios mood visualization is designed to convey emotional state through color and form.</h3>
+      <h3>Colors represent large generalizations of emotion such as happiness or anger. Each color we selected is uniquely tied to the psychological relation humans have with color. Happiness is bubbly and yellow, anger is aggressive and red, sadness is mellowed and blue. You can find Ambios complete color key below.</h3>
+
+      <img src="images/moodAmbio.png"
+           class="ambioImg" />
+
+      <h3>Each of Ambios color generalizations encompass a subset of more descriptive emotional states. The form of Ambios visualization is intended to represent this sub-emotion and express how the user is outwardly conveying that emotion.</h3>
+      <h3>For example, joyfulness and content both exist inside the happiness generalization. They will both be yellow. However, content is often an internal emotional state, while joyfulness is often conveyed outwardly. The form of Ambio will represent that. A visualization of content will appear controlled and smooth, while joyfulness will appear more erratic and energetic.</h3>
+      <h3>Below are demo visualizations of focus and relaxation from the calm mood generalization.</h3>
+      <div class="flex">
+        <div class="ambioVideoHalf">
+          <div class='embed-container'><iframe src="https://player.vimeo.com/video/215970758"
+                    frameborder='0'
+                    webkitAllowFullScreen
+                    mozallowfullscreen
+                    allowFullScreen></iframe></div>
+        </div>
+        <div class="ambioVideoHalf">
+          <div class='embed-container'><iframe src="https://player.vimeo.com/video/215976119"
+                    frameborder='0'
+                    webkitAllowFullScreen
+                    mozallowfullscreen
+                    allowFullScreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ambioSection">
+      <h2 class="ambioSectionTitle">Ambio Exhibt</h2>
+      <h3>During Imagine RIT 2017, we showed Ambio to the world. Highlights below.</h3>
+      <div class="ambioVideo">
+        <div class='embed-container'><iframe src="https://player.vimeo.com/video/297332105"
+                  frameborder='0'
+                  webkitAllowFullScreen
+                  mozallowfullscreen
+                  allowFullScreen></iframe></div>
+      </div>
+    </div>
+
+    <div class="ambioSection">
+      <h2 class="ambioSectionTitle">More Info</h2>
+      <h3><b>GitHub:</b> <a href="https://github.com/ambioapp/ambioSwift"
+           target="_blank">https://github.com/ambioapp/ambioSwift</a></h3>
+      <h3><b>Design:</b> <a href="images/ambio-process.compressed.pdf"
+           target="_blank">Process Docs</a></h3>
+    </div>
+
+    <div class="ambioSection">
+      <h2 class="ambioSectionTitle">Team</h2>
+      <h3>Conner Hasbrouck, Colton Woytas, Julianne Burke, Jessica Witley, Sudarshan Ashok, Vincent Lin, Josh Ladisic</h3>
+    </div>
+
+  </div>
+
 </body>
 
 </html>

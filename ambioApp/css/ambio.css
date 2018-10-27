@@ -1,0 +1,95 @@
+.ambioRoot {
+  -webkit-animation: Gradient 8s ease infinite;
+  -moz-animation: Gradient 8s ease infinite;
+  animation: Gradient 8s ease infinite;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, rgb(143,19,253), rgba(71,55,224,1), #23D5AB);
+  background-size: 300% 150%;
+}
+
+.ambioRoot .sectionMargin {
+  max-width: 800px;
+  margin-bottom: 100px;
+  padding: 15px;
+}
+
+p,
+h2,
+h3 {
+  color: #FFFFFF;
+}
+
+a {
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+@media only screen and (max-width: 1000px) {
+  .ambioRoot .sectionMargin {
+    position: relative;
+  }
+}
+
+.ambioHeader {
+  text-align: center;
+}
+
+.ambioHeaderImage {
+  width: 400px;
+  height: auto;
+}
+
+.ambioSection:first-of-type {
+  margin-top: 50px;
+}
+
+.ambioSection {
+  margin-top: 120px;
+}
+
+.ambioSectionTitle {
+  width: fit-content;
+  /* border-bottom: solid 3px #FFFFFF; */
+}
+
+.ambioImg {
+  width: 100%;
+}
+
+.ambioVideo {
+  margin: auto;
+  border: solid 3px #FFFFFF;
+  background: #000000;
+}
+
+.ambioVideoHalf {
+  width: 48%;
+  margin-bottom: 15px;
+  border: solid 3px #FFFFFF;
+  background: #000000;
+}
+
+.embed-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 0;
+  height: auto;
+  padding-bottom: 56.25%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .ambioVideo,
+  .ambioVideoHalf {
+    width: 100%;
+  }
+}

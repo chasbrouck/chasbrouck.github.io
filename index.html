@@ -9,48 +9,48 @@
         href="images/icon.png">
   <title>Conner Hasbrouck</title>
 
-  <!-- libs -->
-  <link rel="stylesheet"
-        href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
-  <link rel="stylesheet"
-        href="https://unpkg.com/purecss@0.6.1/build/pure-min.css">
-  <link rel="stylesheet"
-        href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- init load code-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+  <style type="text/css">
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script type="text/javascript">
+    $('html').addClass('hidden');
+    $(document).ready(function() {
+      $('html').show();
+    });
+  </script>
+
 
   <!-- my bomb ass css -->
   <link rel="stylesheet"
+        type="text/css"
+        href="fullPage/fullPage.min.css" />
+  <link rel="stylesheet"
         href="css/app.css">
 
-  <!--fullPage-->
+  <!-- libs -->
   <link rel="stylesheet"
-        type="text/css"
-        href="fullPage/jquery.fullPage.css" />
-  <script src="fullPage/jquery.easings.min.js"></script>
-  <script type="text/javascript"
-          src="fullPage/scrolloverflow.min.js"></script>
-  <script type="text/javascript"
-          src="fullPage/jquery.fullPage.js"></script>
+        href="css/font-awesome.min.css">
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        sectionsColor: ['#ffffff', '#ffffff', '#ffffff'],
-        anchors: ['home', 'about', 'work', 'contact'],
-        menu: '#menu',
-        scrollOverflow: true,
-        resetSliders: true,
-      });
-    });
-  </script>
+  <!--fullPage JS-->
+  <script src="fullPage/easings.min.js"></script>
+  <script type="text/javascript"
+          src="fullPage/fullPage.min.js"></script>
+  <script type="text/javascript"
+          src="fullPage/jquery.fullPage.extensions.min.js"></script>
+  <script type="text/javascript"
+          src="js/fullPageAnchors.js"></script>
 
 </head>
 
 <body>
-  <ul id="menu">
-    <!--<li data-menuanchor="home" class=""><a href="#home">home</a></li>-->
+  <ul id="menu"
+      class="homeTextDull">
     <li data-menuanchor="about"
         class=""><a href="#about">about</a></li>
     <li data-menuanchor="work"><a href="#work">work</a></li>
@@ -58,116 +58,211 @@
   </ul>
 
   <div id="fullpage">
-    <div class="section "
+
+    <!-- home -->
+    <div class="section"
          id="section0">
-      <div class="pure-g">
-        <div class="pure-u-3-24"></div>
-        <div class="pure-u-18-24">
-          <h2 class="center">I'm <a href="#about"><span class="blueU">Conner Hasbrouck</span></a>, a <a href="#work"><span class="yellowU">developer and digital designer</span></a>.</h2>
-          <h2 class="center"><a href="#about"><span class="greenU">Want to know more about me?</span></a> Oh, and here's my <a href="images/resume.pdf" target="_blank"><span class="redU">resume</span></a>.</h2>
-        </div>
+      <div class="sectionMargin homeText center">
+        <h2>
+          <span class="homeTextDull">I'm </span><a href="#about"
+             id="conner"
+             class="underline">Conner Hasbrouck</a><span class="homeTextDull">, a </span><a href="#work"
+             id="dev"
+             class="underline">developer and digital designer</a><span class="homeTextDull">.</span>
+        </h2>
+        <h2>
+          <a href="#about"
+             id="more"
+             class="underline">Want to know more about me?</a> <span class="homeTextDull">Oh, and here's my </span><a href="images/resume.pdf"
+             target="_blank"
+             id="resume"
+             class="underline">resume</a><span class="homeTextDull">.</span>
+        </h2>
       </div>
     </div>
-    <div class="section "
+
+    <!-- about -->
+    <div class="section"
          id="section1">
-      <div class="pure-g">
-        <div class="pure-u-3-24"></div>
-        <div class="pure-u-18-24">
-          <h2><span class="blueU2">What do you do?</span></h2>
-          <p>Creative Development. Bad UX keeps me up at night.</p>
+      <div class="sectionMargin flex aboutText">
 
-          <h2><span class="yellowU2">Whatcha been up to?</span></h2>
-          <p>Coding and kicking it at Truth Labs in Chicago</p>
+        <div class="aboutLeft">
+          <div id="aboutTextWork">
+            <h2>I'm a multidisiplinary creative in <span class="aboutTextInteractive blueBg"
+                    id="aboutChicago">Chicago</span>. Born for the <span id="aboutFront"
+                    class="aboutTextInteractive orangeBg">front-end</span> and obsessed with design.</h2>
+            <h2>Sometimes I build things for the internet. Other times the medium is a bit more <span id="aboutExotic"
+                    class="aboutTextInteractive greenBg">exotic</span>. I've worked with social media giants, professional <span id="aboutSports"
+                    class="aboutTextInteractive redBg">sport</span> teams and national brands.</h2>
+          </div>
+          <div id="aboutTextPlay">
+            <h2><a class="underlineDark"
+                 href="https://open.spotify.com/album/2t57i3maapbpz3TUglQNHB">Create Folk Music</a> . <span class="aboutTextInteractive blueBg"
+                    id="aboutRock">Rock Climb</span> . <br /> League of Legends . Collect Vinyl . <br / /><span class="aboutTextInteractive orangeBg"
+                    id="aboutSki">Ski</span> (Not in Chicago. Damn this flat city in the winter) . <span class="aboutTextInteractive greenBg"
+                    id="aboutVideoGames">Video Games</span> . Baseball (Go Red Sox) . Feed my coffee addiction . Cook spicy food . <span class="aboutTextInteractive redBg"
+                    id="aboutPodcast">Listen to Podcasts</span> .</h2>
+          </div>
+          <h3 id="aboutTrigger">
+            <div id="aboutTriggerWork"
+                 class="underlineDark">things i do when not working</div>
+            <div id="aboutTriggerPlay"
+                 class="underlineDark">alright, back to work</div>
+          </h3>
+        </div>
 
-          <h2><span class="greenU2">Freetime? Fun facts?</span></h2>
-          <div id="content-1">
-            <p>I'm an avid rock climber, skier and hiker. I also play in a folk band.</p>
-          </div>
-          <div id="content-2">
-            <p>I'm a radio personality at WITR 89.7. My DJ name is "Robert Zimmerman".</p>
-          </div>
-          <div id="content-3">
-            <p>My favorite book is "Zen and the Art of Motorcycle Maintenance".</p>
-          </div>
-          <div id="content-4">
-            <p>I dont like riding motocycles.</p>
-          </div>
-          <div id="content-5">
-            <p>I play guitar, mandolin, ukulele and a bit of banjo. I also sing.</p>
-          </div>
-          <div id="content-6">
-            <p>I have coffee addiction. Seriously, I drink a lot of coffee.</p>
-          </div>
-          <div id="content-7">
-            <p>I love to cook and prefer spicy food. Bring the heat.</p>
-          </div>
-          <div id="content-8">
-            <p>I firmly beleive that Bob Dylan is the greatest songwriter ever to live.</p>
-          </div>
-          <div id="content-8">
-            <p>I firmly beleive that Bob Dylan is the greatest songwriter ever to live.</p>
-          </div>
+        <div class="aboutRight">
+          <iframe src="https://giphy.com/embed/5jYizQflplnuiDKFll"
+                  width="480"
+                  height="222"
+                  frameBorder="0"
+                  id="aboutChicagoGIF"
+                  class="giphy-embed static"
+                  allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/3o7btR7AIrwtkHOacg"
+                  width="480"
+                  height="254"
+                  frameBorder="0"
+                  id="aboutSportsGIF"
+                  class="giphy-embed static"
+                  allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/ZwrSh17PHByrjsLvmd"
+                  width="480"
+                  height="198"
+                  frameBorder="0"
+                  id="aboutExoticGIF"
+                  class="giphy-embed static"
+                  allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/XIqCQx02E1U9W"
+                  width="480"
+                  height="269"
+                  frameBorder="0"
+                  id="aboutFrontGIF"
+                  class="giphy-embed static"
+                  allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/lG5FxBIU4dFRK"
+                  width="480"
+                  height="270"
+                  frameBorder="0"
+                  class="giphy-embed static"
+                  id="aboutRockGIF"
+                  allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/SC0VDXns3gvS0"
+                  width="480"
+                  height="355"
+                  frameBorder="0"
+                  class="giphy-embed static"
+                  id="aboutSkiGIF"
+                  allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/rPbSQoaS6RSvK"
+                  width="480"
+                  height="269"
+                  frameBorder="0"
+                  id="aboutVideoGamesGIF"
+                  class="giphy-embed static"
+                  allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/eenSmyv5VGhzUNTiWy"
+                  width="480"
+                  height="240"
+                  frameBorder="0"
+                  id="aboutPodcastGIF"
+                  class="giphy-embed static"
+                  allowFullScreen></iframe>
 
-          <h3><a href="#about" id="funFact"><span class="redU">more fun facts?</span></a></h3>
         </div>
       </div>
     </div>
+
+    <!-- work -->
     <div class="section"
          id="section2">
-      <div class="pure-g pad-nav">
-        <div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
-          <a href="ambioApp/"><img src="images/ambio.png" class="workImg"></a>
-        </div>
-        <div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
-          <a href="@/"><img src="images/@.png" class="workImg"></a>
-        </div>
-        <div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
-          <a href="vinyl/"><img src="images/watchrock1.png" class="workImg"></a>
-        </div>
-        <div class="pure-u-lg-1-4 pure-u-md-1-4 pure-u-1-2">
-          <a href="piano/"><img src="images/Piano.png" class="workImg"></a>
-        </div>
+      <div class="sectionMargin flex">
+
+        <a href="https://windycity311.perficientdigitallabs.com/"
+           class="workBox windyCity"
+           target="_blank">
+          <div class="workContent">
+            <img src="images/windyCityLogo.png"
+                 class="workImg workDesktop">
+            <h2 class="workMobile windyText">Windy City 311</h2>
+          </div>
+        </a>
+
+        <a href="ambioApp/"
+           target="_blank"
+           class="workBox ambio">
+          <div class="workContent">
+            <img src="ambioApp/images/logo-white.png"
+                 class="workImg">
+          </div>
+        </a>
+
+        <a href="piano/"
+           class="workBox piano"
+           target="_blank">
+          <div class="workContent">
+            <img src="images/piano.gif"
+                 class="workImg">
+          </div>
+        </a>
       </div>
     </div>
+
+    <!-- contact -->
     <div class="section"
          id="section3">
-      <div class="intro">
-        <div class="pure-g">
-          <div class="pure-u-3-24"></div>
-          <div class="pure-u-18-24">
-            <h2 class=""><span class="blueU2">email:</span> <a href="mailto:connerhasbrouck@gmail.com">connerhasbrouck@gmail.com</a></h2>
-            <h2 class=""><span class="yellowU2">telepathy:</span> ~~~~~~~~~~~~~~~~~~</h2>
-            <h2 class=""><span class="greenU2">magic voice box:</span> 518.728.0671</h2>
-
-            <div class="">
-              <h2><span class="redU2">social:</span>
-						<a href="https://www.facebook.com/conner.hasbrouck"><i class="fa fa-facebook-square fa-lg"></i></a>
-						<a href="https://github.com/chasbrouck"><i class="fa fa-github-square fa-lg"></i></a>
-						<a href="https://www.linkedin.com/in/conner-hasbrouck-b8905289"><i class="fa fa-linkedin-square fa-lg"></i></a>
-						<a href="https://medium.com/@connerhasbrouck"><i class="fa fa-medium fa-lg"></i></a>
-					</h2>
-            </div>
-          </div>
+      <div class="sectionMargin">
+        <h2><span class="blueBg contactTitle">email:</span> <a href="mailto:connerhasbrouck@gmail.com">connerhasbrouck@gmail.com</a></h2>
+        <h2><span class="orangeBg contactTitle">telepathy:</span> ~~~~~~~~~~~~~~~~~~</h2>
+        <h2><span class="greenBg contactTitle">magic voice box:</span> 518.728.0671</h2>
+        <div>
+          <h2><span class="redBg contactTitle">social:</span>
+            <a href="https://www.instagram.com/conner.hasbrouck/?hl=en"
+               target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+            <a href="https://www.facebook.com/conner.hasbrouck"
+               target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+            <a href="https://github.com/chasbrouck"
+               target="_blank"><i class="fa fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/conner-hasbrouck-b8905289"
+               target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
+            <a href="https://medium.com/@connerhasbrouck"
+               target="_blank"><i class="fa fa-medium fa-lg"></i></a>
+          </h2>
         </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    $(document).ready(function() {
-      var divs = $('div[id^="content-"]').hide(),
-        i = 0;
+    <script type="text/javascript"
+            src="js/homeBgInteractive.js"></script>
+    <script type="text/javascript"
+            src="js/GIFToggle.js"></script>
 
-      function cycle() {
-        divs.fadeOut(400).delay(400).eq(i).fadeIn(400);
-        i = ++i % divs.length;
-      };
-      cycle()
-      $('#funFact').click(function() {
-        cycle()
-      })
-    });
-  </script>
+    <script>
+      var aboutState = 0;
+
+      function toggleAboutText() {
+        if (this.aboutState === 0) {
+          $("#aboutTextWork").css("display", 'none');
+          $("#aboutTriggerWork").css("display", 'none');
+          $("#aboutTextPlay").css("display", 'block');
+          $("#aboutTriggerPlay").css("display", 'block');
+          this.aboutState = 1
+        } else {
+          $("#aboutTextPlay").css("display", 'none');
+          $("#aboutTriggerPlay").css("display", 'none');
+          $("#aboutTextWork").css("display", 'block');
+          $("#aboutTriggerWork").css("display", 'block');
+          this.aboutState = 0
+        }
+      }
+
+      $("#aboutTrigger").click(
+        function() {
+          toggleAboutText();
+        }
+      );
+    </script>
+
 </body>
 
 </html>

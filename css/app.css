@@ -464,9 +464,18 @@ h2 {
   .workBox {
     width: 275px;
     max-width: auto;
-    height: 100px;
+    height: 75px;
     margin: 5px 0;
     border-radius: 10px;
+  }
+
+  .workContent {
+    height: 75px;
+  }
+
+  .workImg {
+    height: 100%;
+    width: auto;
   }
 
   .workDesktop {
@@ -477,10 +486,6 @@ h2 {
     display: block;
   }
 
-  .piano .workImg {
-    width: auto;
-    height: 100px;
-  }
 }
 
 /* contact */

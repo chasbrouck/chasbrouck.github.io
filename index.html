@@ -28,9 +28,6 @@
 
   <!-- my bomb ass css -->
   <link rel="stylesheet"
-        type="text/css"
-        href="fullPage/fullPage.min.css" />
-  <link rel="stylesheet"
         href="css/app.css">
 
   <!-- libs -->
@@ -38,7 +35,11 @@
         href="css/font-awesome.min.css">
 
   <!--fullPage JS-->
-  <script src="fullPage/easings.min.js"></script>
+  <link rel="stylesheet"
+        type="text/css"
+        href="fullPage/fullPage.min.css" />
+  <script type="text/javascript"
+          src="fullPage/easings.min.js"></script>
   <script type="text/javascript"
           src="fullPage/fullPage.min.js"></script>
   <script type="text/javascript"
@@ -117,57 +118,49 @@
                   height="222"
                   frameBorder="0"
                   id="aboutChicagoGIF"
-                  class="giphy-embed static"
-                  allowFullScreen></iframe>
+                  class="giphy-embed static"></iframe>
           <iframe src="https://giphy.com/embed/3o7btR7AIrwtkHOacg"
                   width="480"
                   height="254"
                   frameBorder="0"
                   id="aboutSportsGIF"
-                  class="giphy-embed static"
-                  allowFullScreen></iframe>
+                  class="giphy-embed static"></iframe>
           <iframe src="https://giphy.com/embed/ZwrSh17PHByrjsLvmd"
                   width="480"
                   height="198"
                   frameBorder="0"
                   id="aboutExoticGIF"
-                  class="giphy-embed static"
-                  allowFullScreen></iframe>
+                  class="giphy-embed static"></iframe>
           <iframe src="https://giphy.com/embed/XIqCQx02E1U9W"
                   width="480"
                   height="269"
                   frameBorder="0"
                   id="aboutFrontGIF"
-                  class="giphy-embed static"
-                  allowFullScreen></iframe>
+                  class="giphy-embed static"></iframe>
           <iframe src="https://giphy.com/embed/lG5FxBIU4dFRK"
                   width="480"
                   height="270"
                   frameBorder="0"
                   class="giphy-embed static"
-                  id="aboutRockGIF"
-                  allowFullScreen></iframe>
+                  id="aboutRockGIF"></iframe>
           <iframe src="https://giphy.com/embed/SC0VDXns3gvS0"
                   width="480"
                   height="355"
                   frameBorder="0"
                   class="giphy-embed static"
-                  id="aboutSkiGIF"
-                  allowFullScreen></iframe>
+                  id="aboutSkiGIF"></iframe>
           <iframe src="https://giphy.com/embed/rPbSQoaS6RSvK"
                   width="480"
                   height="269"
                   frameBorder="0"
                   id="aboutVideoGamesGIF"
-                  class="giphy-embed static"
-                  allowFullScreen></iframe>
+                  class="giphy-embed static"></iframe>
           <iframe src="https://giphy.com/embed/eenSmyv5VGhzUNTiWy"
                   width="480"
                   height="240"
                   frameBorder="0"
                   id="aboutPodcastGIF"
-                  class="giphy-embed static"
-                  allowFullScreen></iframe>
+                  class="giphy-embed static"></iframe>
 
         </div>
       </div>
@@ -236,32 +229,8 @@
             src="js/homeBgInteractive.js"></script>
     <script type="text/javascript"
             src="js/GIFToggle.js"></script>
-
-    <script>
-      var aboutState = 0;
-
-      function toggleAboutText() {
-        if (this.aboutState === 0) {
-          $("#aboutTextWork").css("display", 'none');
-          $("#aboutTriggerWork").css("display", 'none');
-          $("#aboutTextPlay").css("display", 'block');
-          $("#aboutTriggerPlay").css("display", 'block');
-          this.aboutState = 1
-        } else {
-          $("#aboutTextPlay").css("display", 'none');
-          $("#aboutTriggerPlay").css("display", 'none');
-          $("#aboutTextWork").css("display", 'block');
-          $("#aboutTriggerWork").css("display", 'block');
-          this.aboutState = 0
-        }
-      }
-
-      $("#aboutTrigger").click(
-        function() {
-          toggleAboutText();
-        }
-      );
-    </script>
+    <script type="text/javascript"
+            src="js/aboutText.js"></script>
 
 </body>
 

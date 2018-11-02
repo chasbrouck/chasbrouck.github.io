@@ -372,6 +372,7 @@ h2 {
   height: 275px;
   margin: 0 5px;
   border-radius: 10px;
+  position: relative;
 }
 
 .workContent {
@@ -400,6 +401,134 @@ h2 {
   animation: Gradient 8s ease infinite;
   background: linear-gradient(-45deg, #EE7752, #E73C7E, rgb(143,19,253), rgba(71,55,224,1), #23D5AB);
   background-size: 300% 100%;
+}
+
+.arLayer {
+  font-size: 80px;
+    position: absolute;
+    opacity: .8;
+    background: rgba(255, 255, 255, 0.1);
+    width: 150px;
+    height: 150px;
+    left: 0;
+    top: 0;
+    b: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;;
+}
+
+.arLayer1 {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(8);
+  color: #762DEE;
+  -webkit-animation: Hover-1  8s ease infinite;
+  -moz-animation: Hover-1 8s ease infinite;
+  animation: Hover-1 8s ease infinite;
+}
+
+.arLayer2 {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(4);
+  color: #0E82F9;
+  -webkit-animation: Hover-2  8s ease infinite;
+  -moz-animation: Hover-2 8s ease infinite;
+  animation: Hover-2 8s ease infinite;
+}
+
+.arLayer3 {
+	transform: rotateX(45deg) rotateZ(45deg);
+  color: #23D5AB;
+}
+
+.arLayer4 {
+	transform: rotateX(45deg) rotateZ(45deg) translateZ(-4);
+  color: #F4B223;
+  -webkit-animation: Hover-4  8s ease infinite;
+  -moz-animation: Hover-4 8s ease infinite;
+  animation: Hover-4 8s ease infinite;
+}
+
+.arLayer5 {
+	transform: rotateX(45deg) rotateZ(45deg) translateZ(-8);
+  color: #F8246E;
+  -webkit-animation: Hover-5  8s ease infinite;
+  -moz-animation: Hover-5 8s ease infinite;
+  animation: Hover-5 8s ease infinite;
+}
+
+.arMobile {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.arMobile1 {
+  color: #F8246E;
+}
+.arMobile2 {
+  color: #F4B223;
+}
+.arMobile3 {
+  color: #23D5AB;
+}
+.arMobile4 {
+  color: #0E82F9;
+}
+.arMobile5 {
+  color: #762DEE;
+}
+
+.ar .workContent {
+  width: 100%;
+  max-width: 275px;
+  height: 275px;
+}
+
+@-webkit-keyframes Hover-1 {
+  0% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(-8px);
+  }
+  50% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(-36px);
+  }
+  100% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(-8px);
+  }
+}
+
+@-webkit-keyframes Hover-2 {
+  0% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(-4px);
+  }
+  50% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(-18px);
+  }
+  100% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(-4px);
+  }
+}
+
+@-webkit-keyframes Hover-4 {
+  0% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(4px);
+  }
+  50% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(18px);
+  }
+  100% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(4px);
+  }
+}
+
+@-webkit-keyframes Hover-5 {
+  0% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(8px);
+  }
+  50% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(36px);
+  }
+  100% {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(8px);
+  }
 }
 
 @-webkit-keyframes Gradient {

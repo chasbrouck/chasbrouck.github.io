@@ -1,0 +1,47 @@
+.arRoot {
+  background: #000;
+}
+
+.arRoot .sectionMargin {
+  max-width: 800px;
+  margin-bottom: 40px;
+  padding: 15px;
+}
+
+.spacerBottom {
+  width: 100%;
+  height: 150px;
+}
+
+p,
+h2,
+h3 {
+  color: #FFFFFF;
+}
+
+a {
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.arTitle {
+  width: 100%;
+  max-width: 50px;
+  height: 250px;
+  text-align: left;
+  margin: auto;
+  position: relative;
+  transform: translateX(-40px);
+}
+
+.sectionTitle {
+  background: #fff;
+  color: #000;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 1000px) {
+  .arRoot .sectionMargin {
+    position: relative;
+  }
+}

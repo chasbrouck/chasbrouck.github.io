@@ -7,22 +7,22 @@
 
 /* Color */
 .blueBg {
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #6666FF;
 }
 
 .orangeBg {
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #F4845F;
 }
 
 .greenBg {
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #00A896;
 }
 
 .redBg {
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #EA4C89;
 }
 

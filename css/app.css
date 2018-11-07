@@ -7,18 +7,22 @@
 
 /* Color */
 .blueBg {
+  border-radius: 4px;
   background-color: #6666FF;
 }
 
 .orangeBg {
+  border-radius: 4px;
   background-color: #F4845F;
 }
 
 .greenBg {
+  border-radius: 4px;
   background-color: #00A896;
 }
 
 .redBg {
+  border-radius: 4px;
   background-color: #EA4C89;
 }
 
@@ -269,7 +273,7 @@ h2 {
 }
 
 .aboutTextInteractive {
-  padding: 0 2px;
+  padding: 0 4px;
   cursor: pointer;
   transition: 0.5s ease;
   color: #FFFFFF;
@@ -619,7 +623,7 @@ h2 {
 
 /* contact */
 .contactTitle {
-  padding: 0 2px;
+  padding: 0 4px;
   color: #FFFFFF;
 }
 

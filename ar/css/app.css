@@ -36,6 +36,8 @@ a {
 
 .sectionTitle {
   background: #fff;
+  padding: 0 5px;
+  border-radius: 5px;
   color: #000;
   width: fit-content;
 }

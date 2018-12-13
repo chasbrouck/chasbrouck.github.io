@@ -254,8 +254,8 @@ h2 {
   -ms-animation: fadeinDull ease-in 1.5s; /* Internet Explorer */
   -o-animation: fadeinDull ease-in 1.5s; /* Opera < 12.1 */
   animation: fadeinDull ease-in 1.5s;
-  -webkit-animation-delay: 1.3s;
-  -moz-animation-delay: 1.3s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
   animation-delay: 2.6s;
   opacity: 0;
 
@@ -370,13 +370,13 @@ h2 {
 
 /* work */
 .workBox {
+  position: relative;
   display: flex;
   width: 25%;
   max-width: 275px;
   height: 275px;
   margin: 0 5px;
   border-radius: 10px;
-  position: relative;
 }
 
 .workContent {
@@ -408,59 +408,60 @@ h2 {
 }
 
 .arLayer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.1);
   font-size: 80px;
-    position: absolute;
-    opacity: .8;
-    background: rgba(255, 255, 255, 0.1);
-    width: 150px;
-    height: 150px;
-    left: 0;
-    top: 0;
-    b: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;;
+
+  b: 0;;
 }
 
 .arLayer1 {
   transform: rotateX(45deg) rotateZ(45deg) translateZ(8);
-  color: #762DEE;
   -webkit-animation: Hover-1  8s ease infinite;
   -moz-animation: Hover-1 8s ease infinite;
   animation: Hover-1 8s ease infinite;
+  color: #762DEE;
 }
 
 .arLayer2 {
   transform: rotateX(45deg) rotateZ(45deg) translateZ(4);
-  color: #0E82F9;
   -webkit-animation: Hover-2  8s ease infinite;
   -moz-animation: Hover-2 8s ease infinite;
   animation: Hover-2 8s ease infinite;
+  color: #0E82F9;
 }
 
 .arLayer3 {
-	transform: rotateX(45deg) rotateZ(45deg);
+  transform: rotateX(45deg) rotateZ(45deg);
   color: #23D5AB;
 }
 
 .arLayer4 {
-	transform: rotateX(45deg) rotateZ(45deg) translateZ(-4);
-  color: #F4B223;
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(-4);
   -webkit-animation: Hover-4  8s ease infinite;
   -moz-animation: Hover-4 8s ease infinite;
   animation: Hover-4 8s ease infinite;
+  color: #F4B223;
 }
 
 .arLayer5 {
-	transform: rotateX(45deg) rotateZ(45deg) translateZ(-8);
-  color: #F8246E;
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(-8);
   -webkit-animation: Hover-5  8s ease infinite;
   -moz-animation: Hover-5 8s ease infinite;
   animation: Hover-5 8s ease infinite;
+  color: #F8246E;
 }
 
 .arMobile {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
 }
@@ -607,8 +608,8 @@ h2 {
   }
 
   .workImg {
-    height: 100%;
     width: auto;
+    height: 100%;
   }
 
   .workDesktop {
@@ -618,7 +619,6 @@ h2 {
   .workMobile {
     display: block;
   }
-
 }
 
 /* contact */
@@ -645,4 +645,47 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Animation */
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0);
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    transform: translate3d(0,-40px,0);
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation: fadeInUp 1.2s ease;
+  -moz-animation: fadeInUp 1.2s ease;
+  animation: fadeInUp 1.2s ease;
+  opacity: 0;
+
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInDown {
+  -webkit-animation: fadeInDown 1.2s ease;
+  -moz-animation: fadeInDown 1.2s ease;
+  animation: fadeInDown 1.2s ease;
+  opacity: 0;
+
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }

@@ -1,0 +1,60 @@
+.rgbRoot {
+  background: #000000;
+}
+
+h3 {
+  color: white;
+}
+
+a {
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.rgbRoot .sectionMargin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.titleBlock {
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.title {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+@media only screen and (max-width: 1000px) {
+  .rgbRoot .sectionMargin {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .rgbGif {
+    width: 200px;
+    height: auto;
+  }
+}

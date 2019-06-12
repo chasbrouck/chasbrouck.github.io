@@ -576,18 +576,13 @@ h2 {
   background: #000000;
 }
 
-.windyCity {
+.ctaAR {
   background: #95DCE8;
 }
 
-.windyCity .workImg {
-  width: 80px;
+.ctaAR .workImg {
+  width: 150px;
   height: auto;
-}
-
-.windyText {
-  font-size: 24px;
-  font-weight: 700;
 }
 
 .piano {
@@ -647,6 +642,17 @@ h2 {
 
   .RGBeatButton {
     padding: 5px 20px;
+  }
+
+  .ctaAR .workImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 50px;
+    margin: auto;
   }
 }
 
